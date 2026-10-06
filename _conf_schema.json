@@ -1,0 +1,22 @@
+{
+  "enable": {
+    "description": "插件总开关：关闭后本插件不做任何拦截（L0 闸门与 L1 处理器层同时失效）",
+    "type": "bool",
+    "default": true
+  },
+  "adapter_gate": {
+    "description": "入队前闸门（L0）：在消息进入事件队列前丢弃黑名单群消息，早于 EventBus 日志与所有插件的 event_filter。关闭后仅保留处理器层最高优先级拦截（L1）",
+    "type": "bool",
+    "default": true
+  },
+  "blacklisted_groups": {
+    "description": "需要彻底静默的目标群号列表（支持纯数字群号，也支持 aiocqhttp:GroupMessage:群号 这类会话源）",
+    "type": "list",
+    "default": []
+  },
+  "log_intercept": {
+    "description": "拦截到监控群消息时是否在终端打印拦截记录",
+    "type": "bool",
+    "default": true
+  }
+}
