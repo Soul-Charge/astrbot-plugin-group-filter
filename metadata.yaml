@@ -2,4 +2,4 @@ name: astrbot_plugin_group_filter
 desc: 监控群源头静默与阻断过滤器 - 入队前闸门 + 处理器层最高优先级双层拦截，杜绝误回复与Token消耗
 version: v1.1.0
 author: NaE
-repo: ""
+repo: "https://github.com/Soul-Charge/astrbot-plugin-group-filter"
